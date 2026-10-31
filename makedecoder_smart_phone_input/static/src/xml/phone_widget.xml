@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="makedecoder_smart_phone_input.PhoneField">
+        <div class="o_field_intl_phone w-100" t-att-data-country="this.countryCode">
+            <a t-if="this.props.readonly" t-att-href="'tel:' + this.displayValue" t-out="this.displayValue"/>
+            <input t-else="" class="o_input" type="text" t-att-id="this.props.id"
+                   t-att-autocomplete="this.props.autocomplete" t-ref="this.inputRef"/>
+        </div>
+    </t>
+</templates>
